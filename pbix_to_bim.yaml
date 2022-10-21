@@ -228,7 +228,7 @@ steps:
           Write-Debug "$ind $executable $params"
           $p = Start-Process -FilePath $executable -Wait -NoNewWindow -PassThru -RedirectStandardOutput "$temp_name.log" -ArgumentList $params
 
-          if ($p.ExitCode -ne 2) {
+          if ($p.ExitCode -ne 0) {
             Write-Error "$ind Failed to extract PBIX metadata from $($dataset.WebUrl)!"
           }
 
