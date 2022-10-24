@@ -1,0 +1,10 @@
+{
+  "name": "7ca592b6-3b21-4b35-b628-60b38632f7e5",
+  "fromCardinality": "one",
+  "fromTable": "DimProducts",
+  "fromColumn": "Product",
+  "toTable": "DimCostPrice",
+  "toColumn": "Product",
+  "isActive": false,
+  "crossFilteringBehavior": "bothDirections"
+}
