@@ -1,0 +1,9 @@
+{
+  "name": "08e4bfe1-023c-451a-a047-66708560676f",
+  "fromCardinality": "one",
+  "fromTable": "DimProducts",
+  "fromColumn": "Product",
+  "toTable": "FactSales",
+  "toColumn": "Product",
+  "crossFilteringBehavior": "bothDirections"
+}

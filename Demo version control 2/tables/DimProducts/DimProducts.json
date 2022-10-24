@@ -1,0 +1,33 @@
+{
+  "name": "DimProducts",
+  "lineageTag": "55991da9-8eb3-4dae-8dff-dcf77e11f2fa",
+  "partitions": [
+    {
+      "name": "DimProducts-54eee06e-ce10-4350-915e-5131b72b38db",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"G:\\Mijn Drive\\Version control\\DimProducts.xlsx\"), null, true),",
+          "    Blad1_Sheet = Source{[Item=\"Blad1\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(Blad1_Sheet,{{\"Column1\", type text}, {\"Column2\", type text}}),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+          "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product\", type text}, {\"Name\", type text}})",
+          "in",
+          "    #\"Changed Type1\""
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

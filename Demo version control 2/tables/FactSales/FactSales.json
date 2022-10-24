@@ -1,0 +1,28 @@
+{
+  "name": "FactSales",
+  "lineageTag": "ad1e9af3-f714-4d20-a709-d199ee8a44e2",
+  "partitions": [
+    {
+      "name": "FactSales-b0add4ba-5022-4394-a171-6892d04654f2",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"G:\\Mijn Drive\\Version control\\Sales.xlsx\"), null, true),",
+          "    Blad1_Sheet = Source{[Item=\"Blad1\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Blad1_Sheet, [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product\", type text}, {\"Sales\", Int64.Type}})",
+          "in",
+          "    #\"Changed Type\""
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}
