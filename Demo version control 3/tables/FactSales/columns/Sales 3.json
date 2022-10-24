@@ -1,0 +1,13 @@
+{
+  "name": "Sales 3",
+  "dataType": "string",
+  "sourceColumn": "Sales 3",
+  "lineageTag": "72530689-fd51-4065-86f5-e75ab3f9a2be",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -14,9 +14,10 @@
           "    #\"Promoted Headers\" = Table.PromoteHeaders(Blad1_Sheet, [PromoteAllScalars=true]),",
           "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product\", type text}, {\"Sales\", Int64.Type}}),",
           "    #\"Added Custom\" = Table.AddColumn(#\"Changed Type\", \"Custom\", each [Sales] * 10),",
-          "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Custom\",{{\"Custom\", \"Sales 2\"}})",
+          "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Custom\",{{\"Custom\", \"Sales 2\"}}),",
+          "    #\"Added Custom1\" = Table.AddColumn(#\"Renamed Columns\", \"Sales 3\", each [Sales] * 1000)",
           "in",
-          "    #\"Renamed Columns\""
+          "    #\"Added Custom1\""
         ]
       }
     }
