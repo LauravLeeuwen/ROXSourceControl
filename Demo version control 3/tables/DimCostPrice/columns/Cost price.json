@@ -1,0 +1,14 @@
+{
+  "name": "Cost price",
+  "dataType": "int64",
+  "sourceColumn": "Cost price",
+  "formatString": "0",
+  "lineageTag": "f69e78d3-8fad-4177-9cbb-ad0a1296ed76",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

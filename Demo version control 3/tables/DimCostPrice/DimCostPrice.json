@@ -1,0 +1,32 @@
+{
+  "name": "DimCostPrice",
+  "lineageTag": "fe171769-0af5-45bf-9c2d-7c10d05bdd36",
+  "partitions": [
+    {
+      "name": "DimCostPrice-c3113d72-30bd-43fd-83e0-725154c2502f",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"G:\\Mijn Drive\\Version control\\DimCostPrice.xlsx\"), null, true),",
+          "    Blad1_Sheet = Source{[Item=\"Blad1\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Blad1_Sheet, [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product\", type text}, {\"Cost price\", Int64.Type}})",
+          "in",
+          "    #\"Changed Type\""
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

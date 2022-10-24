@@ -1,0 +1,13 @@
+{
+  "name": "Sales 2",
+  "dataType": "string",
+  "sourceColumn": "Sales 2",
+  "lineageTag": "7b7d4da1-c598-4a92-a7a7-8cc0a315f1cc",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}
