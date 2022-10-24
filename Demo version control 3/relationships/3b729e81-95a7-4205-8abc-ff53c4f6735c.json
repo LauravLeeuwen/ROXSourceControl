@@ -1,0 +1,9 @@
+{
+  "name": "3b729e81-95a7-4205-8abc-ff53c4f6735c",
+  "fromCardinality": "one",
+  "fromTable": "DimSalesPrice",
+  "fromColumn": "Product",
+  "toTable": "FactSales",
+  "toColumn": "Product",
+  "crossFilteringBehavior": "bothDirections"
+}

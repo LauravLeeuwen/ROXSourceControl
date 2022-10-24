@@ -1,8 +1,8 @@
 {
-  "name": "Sales 3",
+  "name": "Product",
   "dataType": "string",
-  "sourceColumn": "Sales 3",
-  "lineageTag": "72530689-fd51-4065-86f5-e75ab3f9a2be",
+  "sourceColumn": "Product",
+  "lineageTag": "b87b506e-eeae-419e-b0f0-c139cefdd266",
   "summarizeBy": "none",
   "annotations": [
     {
