@@ -1,0 +1,54 @@
+{
+  "name": "Demo version control",
+  "id": "Demo version control",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "nl-NL",
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"FactSales\",\"DimProducts\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.110.805.0 (22.10)"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": [
+          "{",
+          "    \"IgnoreInferredObjects\": true,",
+          "    \"IgnoreInferredProperties\": true,",
+          "    \"IgnoreTimestamps\": true,",
+          "    \"SplitMultilineStrings\": true,",
+          "    \"PrefixFilenames\": false,",
+          "    \"LocalTranslations\": false,",
+          "    \"LocalPerspectives\": false,",
+          "    \"LocalRelationships\": false,",
+          "    \"Levels\": [",
+          "        \"Data Sources\",",
+          "        \"Perspectives\",",
+          "        \"Relationships\",",
+          "        \"Roles\",",
+          "        \"Tables\",",
+          "        \"Tables/Columns\",",
+          "        \"Tables/Measures\",",
+          "        \"Translations\"",
+          "    ]",
+          "}",
+          ""
+        ]
+      }
+    ]
+  }
+}
