@@ -4,3 +4,7 @@
 *.log
 TabularEditor_SerializeOptions.json
 ApplySerializeOptionsAnnotation.csx
+
+## Power BI source control
+.commit
+*.pbix
