@@ -1,9 +1,0 @@
-{
-  "name": "e547975a-3fa8-401a-877e-ef40571e09a4",
-  "fromCardinality": "one",
-  "fromTable": "FactSales",
-  "fromColumn": "SalespersonID",
-  "toTable": "DimSalesPerson",
-  "toColumn": "Salesman",
-  "crossFilteringBehavior": "bothDirections"
-}
