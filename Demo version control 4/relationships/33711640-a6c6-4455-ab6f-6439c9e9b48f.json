@@ -1,0 +1,9 @@
+{
+  "name": "33711640-a6c6-4455-ab6f-6439c9e9b48f",
+  "fromCardinality": "one",
+  "fromTable": "FactSales",
+  "fromColumn": "SalespersonID",
+  "toTable": "Blad1",
+  "toColumn": "Salesman",
+  "crossFilteringBehavior": "bothDirections"
+}

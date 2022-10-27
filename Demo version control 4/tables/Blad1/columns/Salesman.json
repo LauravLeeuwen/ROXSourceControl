@@ -1,9 +1,9 @@
 {
-  "name": "SalespersonID",
+  "name": "Salesman",
   "dataType": "int64",
-  "sourceColumn": "SalespersonID",
+  "sourceColumn": "Salesman",
   "formatString": "0",
-  "lineageTag": "cc49b37d-954d-4c82-8c5e-d9eb81c8186f",
+  "lineageTag": "ff07e6b6-bdd7-4f3e-bd21-dc4ab166a88f",
   "summarizeBy": "none",
   "annotations": [
     {

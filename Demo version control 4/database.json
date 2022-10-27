@@ -13,7 +13,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"FactSales\",\"DimProducts\",\"DimCostPrice\",\"DimSalesPrice\"]"
+        "value": "[\"FactSales\",\"DimProducts\",\"DimCostPrice\",\"DimSalesPrice\",\"Blad1\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",

@@ -1,0 +1,28 @@
+{
+  "name": "Blad1",
+  "lineageTag": "e39f5176-c84c-4cdc-8ec3-d40298d1f6e2",
+  "partitions": [
+    {
+      "name": "Blad1-004f9734-7322-40e6-b269-7f23fb17fb67",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"G:\\Mijn Drive\\Version control\\DimSalesPerson.xlsx\"), null, true),",
+          "    Blad1_Sheet = Source{[Item=\"Blad1\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Blad1_Sheet, [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Salesman\", Int64.Type}, {\"Column2\", type text}})",
+          "in",
+          "    #\"Changed Type\""
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}
