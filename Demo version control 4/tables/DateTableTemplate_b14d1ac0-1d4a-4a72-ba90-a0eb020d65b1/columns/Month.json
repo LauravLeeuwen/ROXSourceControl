@@ -1,12 +1,13 @@
 {
   "type": "calculated",
-  "name": "Year",
-  "dataType": "int64",
+  "name": "Month",
+  "dataType": "string",
   "isDataTypeInferred": true,
   "isHidden": true,
-  "expression": "YEAR([Date])",
-  "lineageTag": "454a9f06-92ba-4d69-a833-b69ee7d9a9a0",
-  "dataCategory": "Years",
+  "expression": "FORMAT([Date], \"MMMM\")",
+  "sortByColumn": "MonthNo",
+  "lineageTag": "a27a9ce8-3465-47a4-ae88-134b6698d475",
+  "dataCategory": "Months",
   "summarizeBy": "none",
   "annotations": [
     {
@@ -15,7 +16,7 @@
     },
     {
       "name": "TemplateId",
-      "value": "Year"
+      "value": "Month"
     }
   ]
 }

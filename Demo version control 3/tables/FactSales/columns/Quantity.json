@@ -1,0 +1,14 @@
+{
+  "name": "Quantity",
+  "dataType": "int64",
+  "sourceColumn": "Quantity",
+  "formatString": "0",
+  "lineageTag": "0912a6b0-4720-42f8-900d-903e50e842b7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

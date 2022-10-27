@@ -1,0 +1,14 @@
+{
+  "name": "SalespersonID",
+  "dataType": "int64",
+  "sourceColumn": "SalespersonID",
+  "formatString": "0",
+  "lineageTag": "cc49b37d-954d-4c82-8c5e-d9eb81c8186f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

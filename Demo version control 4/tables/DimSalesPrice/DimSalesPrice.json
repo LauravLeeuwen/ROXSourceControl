@@ -1,0 +1,30 @@
+{
+  "name": "DimSalesPrice",
+  "lineageTag": "a853bb56-0e23-46a7-b42b-9b00a3e90ce3",
+  "partitions": [
+    {
+      "name": "DimSalesPrice-140304b8-594f-45c2-8981-24ecb203610e",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": [
+          "let",
+          "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WcjRU0lEyVIrVATKNgEwjCNMYyDSGME2ATBOl2FgA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Product = _t, #\"Sales price\" = _t]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Product\", type text}, {\"Sales price\", Int64.Type}})",
+          "in",
+          "    #\"Changed Type\""
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

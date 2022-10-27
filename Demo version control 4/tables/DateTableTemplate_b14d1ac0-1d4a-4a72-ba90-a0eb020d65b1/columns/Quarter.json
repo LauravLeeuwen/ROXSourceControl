@@ -1,12 +1,13 @@
 {
   "type": "calculated",
-  "name": "Year",
-  "dataType": "int64",
+  "name": "Quarter",
+  "dataType": "string",
   "isDataTypeInferred": true,
   "isHidden": true,
-  "expression": "YEAR([Date])",
-  "lineageTag": "454a9f06-92ba-4d69-a833-b69ee7d9a9a0",
-  "dataCategory": "Years",
+  "expression": "\"Qtr \" & [QuarterNo]",
+  "sortByColumn": "QuarterNo",
+  "lineageTag": "065f84e7-628e-42b1-b456-b54e2775c3a8",
+  "dataCategory": "Quarters",
   "summarizeBy": "none",
   "annotations": [
     {
@@ -15,7 +16,7 @@
     },
     {
       "name": "TemplateId",
-      "value": "Year"
+      "value": "Quarter"
     }
   ]
 }
